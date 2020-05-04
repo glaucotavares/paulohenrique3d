@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulo Henrique 3d</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.893);
+            color: white;
+        }
+
+        header {
+            margin-top: 70px;
+            color: white;
+            font: normal 18pt helvetica;
+            text-align: center;
+        }
+
+        h1 {
+            font: normal 60pt helvetica;
+
+        }
+
+        .titulo:hover {
+            transform: scale(1.2);
+            transition: all linear 0.1s;
+
+        }
+
+        section#missao {
+            margin-top: 60px;
+            font: normal 13pt arial;
+            text-align: center;
+            background-color: rgb(1, 82, 133);
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.413);
+        }
+
+        section#formacao {
+            margin-top: 60px;
+            font: normal 13pt arial;
+            text-align: center;
+            background-color: rgb(69, 69, 69);
+            border-radius: 5px;
+            padding: 5px;
+            box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.413);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .card_img {
+            width: 350px;
+            height: 350px;
+            overflow: hidden;
+            margin: 30px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.817);
+        }
+
+        .small_img {
+            height: 100%;
+            cursor: pointer;
+            transition: all linear 0.3s;
+        }
+
+        .small_img:hover {
+            filter: grayscale(100%);
+            transform: scale(1.1);
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Paulo Henrique 3D</h1>
+        <h2>Bem Vindo!</h2>
+    </header>
+
+    <section id="missao">
+        <div>
+            <p>Desenvolvimento de projetos e maquetes eletrônicas em 3D</p>
+        </div>
+    </section>
+
+    <div class="modal">
+        <div class="modal_content">
+            <img src="" id="modal_ing">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="card_img">
+                <img src="img1.jpg" class="small_img">
+            </div>
+            <div class="card_img">
+                <img src="img2.jpg" class="small_img">
+            </div>
+            <div class="card_img">
+                <img src="img3.jpg" class="small_img">
+            </div>
+            <div class="card_img">
+                <img src="img4.jpg" class="small_img">
+            </div>
+        </div>
+        <div class="row">
+            <div class="card_img">
+                <img src="img5.jpg" class="small_img">
+            </div>
+            <div class="card_img">
+                <img src="img6.jpg" class="small_img">
+            </div>
+            <div class="card_img">
+                <img src="img7.jpg" class="small_img">
+            </div>
+            <div class="card_img">
+                <img src="img8.jpg" class="small_img">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <section id="formacao">
+        <div>
+            <p>Formação Técnica em Computação Gráfica</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; PauloHenrique3d</p>
+    </footer>
+    <script>
+        var img = document.createElement('img')
+        img.setAttribute('src', 'img1.jpg')
+    </script>
+
+
+
+</body>
+
+</html>
